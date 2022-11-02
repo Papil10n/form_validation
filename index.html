@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+        <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width"> 
+
+        <!-- Отключает принудительную ссылку у номера телефона на iOS -->
+    <meta name="format-detection" content="telephone=no">
+        
+        <!-- SEO -->
+    <!-- Краткое описание страницы  -->
+    <meta name="description" content="">
+    <!-- Ключевые слова страницы  -->
+    <meta name="keywords" content=""> 
+    <!-- Управление доступом поисковых роботов к странице -->
+    <meta name="robots" content="">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="form">
+                <form action="#" id="form" class="form__body">
+                    <h1 class="form__title">Отправка данных в пентагон</h1>
+                    <div class="form__item">
+                        <label for="formName" class="form__label _req">Имя:</label>
+                        <input id="formName" type="text" name="name" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label _req _email">E-mail*:</label>
+                        <input id="formEmail" type="text" name="email" class="form__input _email">
+                    </div>
+                    <div class="form__item">
+                        <div class="form__label">Пол</div>
+                        <div class="options">
+                            <div class="options__item">
+                                <input id="formRightHanded" type="radio" checked value="right" name="hand" class="options__input">
+                                <label for="formRightHanded" class="options__label"><span>male</span></label>
+                            </div>
+                            <div class="options__item">
+                                <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+                                <label for="formLeftHanded" class="options__label"><span>female</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Сообщение</label>
+                        <textarea name="message" class="form__input" id="forMessage"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__label">Возраст:</div>
+                        <select class="select" name="age" id="select">
+                            <option value="от 18 до 25" selected>Молодой</option>
+                            <option value="от 25 до 45">Старый</option>
+                            <option value="от 45">Супер стар</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__label">Прикрепить фото</div>
+                        <div class="file">
+                            <div class="file__item">
+                                <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                                <div class="file__button">Выбрать</div>
+                            </div>
+                            <div id="formPreview" class="file__preview"></div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <input checked type="checkbox" name="agreement" class="checkbox__input _req" id="formAgreement">
+                            <label for="formAgreement" class="checkbox__label">Я даю свое согласие на обработку персональных данных в соответствии с <a target="_blank" href="https://www.interpol.int">правилами</a></label>
+                        </div>
+                    </div>
+                    <button class="form__button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
+    
